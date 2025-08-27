@@ -1,8 +1,8 @@
 import { FC } from "react";
-import styles from "@/pages/components/order/order.module.css"
+import styles from "@/components/order/order.module.css"
 import { useState } from "react";
 import sendMessage from "../service/service";
-import { useRouter } from "next/router";
+
 
 
 const Order:FC = () => {

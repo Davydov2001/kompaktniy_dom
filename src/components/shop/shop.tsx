@@ -1,6 +1,6 @@
 import { FC, useState } from "react"
-import styles from "@/pages/components/shop/shop.module.css"
-import info from "@/pages/shop/products"
+import styles from "@/components/shop/shop.module.css"
+import info from "@/components/products/products"
 import { useRouter } from "next/router"
 
 const Shop:FC = () => {

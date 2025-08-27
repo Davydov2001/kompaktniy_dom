@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import styles from "@/pages/components/contacts/contacts.module.css"
+import styles from "@/components/contacts/contacts.module.css"
 
 const Contacts:FC = () => {
   return <>

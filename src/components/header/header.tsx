@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "@/pages/components/header/header.module.css"
+import styles from "@/components/header/header.module.css"
 import { useState } from "react";
 import { useRouter } from "next/router";
 

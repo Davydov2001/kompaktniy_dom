@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { useRouter } from "next/router";
-import info from '@/pages/shop/products';
-import styles from "@/pages/components/carousel/carousel.module.css"
+import info from "@/components/products/products";
+import styles from "@/components/carousel/carousel.module.css"
 
 const Carousel:FC = () => {
 

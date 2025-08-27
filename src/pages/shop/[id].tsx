@@ -1,6 +1,6 @@
 import { NextPage } from "next";
-import styles from "@/pages/shop/product.module.css"
-import info from "./products";
+import styles from "@/components/products/product.module.css"
+import info from "@/components/products/products";
 import { useRouter } from "next/router";
 import Carousel from "../../components/carousel/carousel";
 import Header from "../../components/header/header";

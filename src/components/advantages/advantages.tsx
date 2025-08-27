@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "@/pages/components/advantages/advantages.module.css"
+import styles from "@/components/advantages/advantages.module.css"
 
 const Advantages:FC = () => {
     return <>

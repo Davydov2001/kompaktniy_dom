@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "@/pages/components/main/main.module.css"
+import styles from "@/components/main/main.module.css"
 
 const Main:FC = () => {
     return <>
