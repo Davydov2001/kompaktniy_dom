@@ -1,0 +1,71 @@
+.main {
+    height: 100vh;
+    padding-top: 10%;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-image: url("https://psv4.userapi.com/s/v1/d/XXuoSB649fmmH6BO9NNqtct9CYpKteXWtMJ8eWcQqPwLntZaxxchDaZ0t4G8w3TC_Gt0h73DiHfoGMZ6rBcBwSwWrtO_KCKuOCWMb_8FBe70-lZqi0ipwg/a_a.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name{
+    width: 100%;
+    margin-left: 5%;
+}
+.name h1 {
+    font-weight: 300;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    color: rgba(255, 255, 255, 0.614);
+}
+
+.text {
+    color: rgba(255, 255, 255, 0.603);
+    width: 35%;
+    margin-right: 5%;
+}
+.text h2{
+    font-weight: 300;
+    font-size: 25px;
+    font-family: "Montserrat";
+}
+.text p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 50;
+    font-size:medium;
+}
+
+@media (max-width: 576px) {
+    .main{
+        justify-content: center;
+    }
+    .name {
+        margin-top: 18vh;
+        margin-inline: 0;
+        width: auto;
+        text-align: center;
+    }
+    .text {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+    .name h1 {
+        font-size: 40px;
+    }
+    .text h2, .text p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1024px) {
+    .text{
+        width: 60%;
+    }
+    .text h2{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

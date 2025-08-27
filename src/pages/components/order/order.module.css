@@ -1,0 +1,180 @@
+.main {
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.559), rgba(0, 0, 0, 0.559)), url("https://ideogram.ai/assets/image/lossless/response/pso50QVcS82flghHmAEYjQ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.name h2{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+.form {
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border: solid rgb(255, 247, 205) 1px;
+    border-radius: 30px;
+    background-color: rgba(149, 149, 149, 0.534);
+}
+
+.button {
+    height: auto;
+    width: 40%;
+    font-size: 4vw;
+    margin-top: 4hv;
+    margin-bottom: 5vh;
+    border-radius: 30px;
+    border: rgb(255, 248, 211) solid 1px;
+    background-color: rgba(0, 0, 0, 0);
+    color:rgb(246, 229, 197);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+}
+.button:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 2px rgb(255, 243, 209);
+}
+
+.form input {
+    width:70%;
+    height: auto;
+    padding-bottom: 1vw;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 3vw;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    border: rgb(255, 248, 211) solid 1px;
+    font-size: 2vw;
+    font-family: "Montserrat";
+    color: aliceblue;
+}
+.form label {
+    margin-top: 5vw;
+    margin-bottom: 1vh;
+    align-self: flex-start;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    margin-left: 10vw;
+    font-size: 3vw;
+}
+
+
+.docs {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-family: "Roboto";
+}
+
+.docs p {
+    width: 80%;
+    text-align: left;
+    font-size: 2vw;
+}
+
+.docs input {
+    width: 4vw;
+}
+.docs p a{
+    color: wheat;
+}
+.err {
+    align-self:flex-start;
+    margin-left: 15%;
+    color: wheat;
+    font-family: "Montserrat";
+}
+.agree_err {
+    width:100%;
+    color: wheat;
+    font-family: "Montserrat";
+}
+
+.not_active {
+  display: none;
+}
+
+.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.653);
+}
+.active div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(149, 149, 149, 0.534);
+  box-shadow: 0px 0px 10px 2px rgb(255, 243, 209);
+  border-radius: 10px;
+  height: 25vh;
+}
+.active div h1 {
+  text-align: center;
+  color: white;
+  font-size: 4vw;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+.active div p {
+  color: white;
+  font-size: 2vw;
+  font-family: "Montserrat";
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+    .name h2 {
+        font-size: 2vw;
+    }
+    .form {
+        width: auto;
+    }
+    .form input, .form label {
+        font-size: 1.5vw;
+    }
+    .form input {
+        margin-bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .form label {
+        margin-top: 60px;
+    }
+    .docs p {
+        font-size: 1vw;
+    }
+    .docs input {
+        width: 2vw;
+    }
+    .button {
+        font-size: 2vw;
+    }
+}

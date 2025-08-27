@@ -1,0 +1,143 @@
+@keyframes scrolling-header {
+    to {
+        background-color: rgba(19, 19, 19, 0.942);
+    }
+}
+@keyframes transform {
+    to {
+        transform: scale(0.9);
+    }
+}
+
+.all{
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 0 300px;
+
+}
+.all div {
+    display: flex;
+    width: 60%;
+    justify-content:space-around;
+
+    animation-name: transform;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 0 300px;
+}
+
+.all div p {
+    cursor: pointer;
+    font-size: 1.75vw;
+    font-family: "Roboto", serif;
+    font-weight: 200;
+    transition: ease-in-out 0.1s;
+    color: rgb(255, 255, 255);
+}
+
+.all div p:hover{
+    transform: scale(1.05);
+    text-shadow: 0px 0px 5px rgb(230, 246, 89);
+    color: rgb(255, 255, 255);
+}
+
+.hide {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.773), rgba(0, 0, 0, 0.778)), url("https://i.pinimg.com/originals/1a/3c/a5/1a3ca5de5e4b3105b321d462c1569abf.jpg");
+    width: 100%;
+    height: 0vh;
+    transition: all 1s ease-in-out;
+}
+.hide a, .hide p {
+    color: aliceblue;
+    margin-top: 10%;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+}
+.show {
+    opacity: 100%;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.773), rgba(0, 0, 0, 0.778)), url("https://i.pinimg.com/originals/1a/3c/a5/1a3ca5de5e4b3105b321d462c1569abf.jpg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transition: all 1s ease-in-out;
+}
+
+.show a {
+    color: aliceblue;
+    margin-top: 10%;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+}
+.show p {
+    cursor: pointer;
+    margin-top: 30%;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+}
+
+.mini{
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .all{
+        display: none;
+    }
+    .mini {
+        display: flex;
+        justify-content: center;
+        position:fixed;
+        height: 10%;
+        width: 100%;
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 25px;
+        z-index: 5;
+        animation-name: scrolling-header;
+        animation-fill-mode: both;
+        animation-timeline: scroll();
+        animation-range: 0 600px;
+    }
+    .show{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .back {
+        margin-top: 20vh;
+    }
+}
+@media (max-width:1024px){
+    .all{
+        justify-content: center;
+    }
+    .all div {
+        width: 80%;
+    }
+    .all div p {
+        font-size: 2.5vw;
+    }
+}

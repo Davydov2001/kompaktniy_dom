@@ -1,0 +1,51 @@
+.main{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.863);
+}
+.header h2{
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 7vw;
+    text-align: center;
+}
+.block {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat";
+}
+.block h2 {
+    font-weight: 400;
+    font-size: 5vw;
+    text-align: center;
+}
+.block p {
+    color: rgba(255, 255, 255, 0.671);
+    font-weight: 400;
+    width: 80%;
+    font-size: 3vw;
+    font-family: "Roboto";
+    text-align: center;
+}
+.block i {
+    font-size: 7vw;
+}
+
+@media (min-width:1024px) {
+    .header h2 {
+        font-size: 3vw;
+    }
+    .block i {
+        font-size: 4vw;
+    }
+    .block h2{
+        font-size: 2.5vw;
+    }
+    .block p {
+        font-size: 1.5vw;
+    }
+}
