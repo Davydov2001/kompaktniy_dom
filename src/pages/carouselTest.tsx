@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import Carousel from "./components/carousel/carousel";
+import Carousel from "../components/carousel/carousel";
 import Head from "next/head";
 
 const Test:NextPage = () => {

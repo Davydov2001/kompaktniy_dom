@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { FC } from 'react';
-import info from '../shop/products';
+import info from '../pages/shop/products';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 

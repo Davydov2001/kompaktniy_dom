@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Header from "./components/header/header";
-import Advantages from "./components/advantages/advantages";
-import Main from "@/pages/components/main/main";
-import Shop from "./components/shop/shop";
-import Order from "./components/order/order";
-import Contacts from "./components/contacts/contacts";
-import Reviews from "./components/reviews/reviews";
+import Header from "@/components/header/header";
+import Advantages from "@/components/advantages/advantages";
+import Main from "@/components/main/main";
+import Shop from "@/components/shop/shop";
+import Order from "@/components/order/order";
+import Contacts from "@/components/contacts/contacts";
 
 
 export default function Home() {

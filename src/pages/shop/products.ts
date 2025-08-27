@@ -123,5 +123,4 @@ const info = {
     carousel,
     video
 }
-
 export default info

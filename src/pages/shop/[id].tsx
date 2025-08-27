@@ -2,9 +2,9 @@ import { NextPage } from "next";
 import styles from "@/pages/shop/product.module.css"
 import info from "./products";
 import { useRouter } from "next/router";
-import Carousel from "../components/carousel/carousel";
-import Header from "../components/header/header";
-import Contacts from "../components/contacts/contacts";
+import Carousel from "../../components/carousel/carousel";
+import Header from "../../components/header/header";
+import Contacts from "../../components/contacts/contacts";
 
 const Product:NextPage = () => {
     const router = useRouter()
