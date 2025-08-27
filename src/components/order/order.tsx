@@ -83,6 +83,11 @@ const Order:FC = () => {
             }
         }  
         setContact(formattedValue)
+        if (formattedValue.length < 18) {
+            setContactError("Вы не до конца ввели номер телефона")
+        } else {
+            setContactError("")
+        }
            
     }
 
@@ -96,6 +101,8 @@ const Order:FC = () => {
                 break
             case 'agree':
                 setAgreeDirty(true)
+            case 'contact':
+                setContactDirty(true)
         }
     }
 
