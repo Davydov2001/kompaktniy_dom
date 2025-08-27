@@ -1,9 +1,9 @@
 import { FC, useState } from "react";
 import styles from "@/pages/components/reviews/reviews.module.css"
-import Card from "./card";
+
 
 const Reviews:FC = () => {
-    const card = Card
+    const card = ["", ""]
     const [state, setState] = useState(0)
     const [position, setPosition] = useState(0)
 
@@ -20,7 +20,7 @@ const Reviews:FC = () => {
     return <>
         <div className={styles.main}>
             <div  style={{transform: `translateX(${String(position)}vw)`, transition: "all ease  0.5s"}} className={styles.scroll}>
-                {card.map()}
+                {/* функция мап */}
             </div>
             <div className={styles.controls}>
                 <i onClick={() => down()} className="bi bi-caret-left"></i>
