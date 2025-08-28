@@ -90,13 +90,14 @@
     }
     .controls {
         gap: 50vw;
+        padding-bottom: 2vw;
     }
     .controls i {
         font-size: 6vw;
     }
     .navigate {
-        padding: 1vw 0;
-        width: 60vw;
+        padding: 2vw 2vw;
+        width: 60%;
         gap: 2vw;
         margin-top: 2vw
     }
