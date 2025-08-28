@@ -26,7 +26,7 @@ const Product:NextPage = () => {
             </div>
             <div onClick={() => setDescription(!description)} className={styles.description}>
                 <p>Описание</p>
-                <i style={description ? {transform: "rotate(135deg)", transition: "all 0.5s"}: {transition: "all ease-in-out 0.5s"}} className="bi bi-plus"></i>
+                <i style={description ? {transform: "rotate(135deg)", transition: "all 0.5s"}: {transition: "all 0.5s"}} className="bi bi-plus"></i>
                 <pre className={description ? `${styles.show}`: `${styles.hide}`}>{info.descriptions[Number(query.id)]}</pre>
             </div>
         </div>
