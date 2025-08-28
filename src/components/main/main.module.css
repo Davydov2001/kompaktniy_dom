@@ -14,58 +14,77 @@
     width: 100%;
     margin-left: 5%;
 }
-.name h1 {
+.name p {
+    font-size: 4vw;
     font-weight: 300;
-    font-size: 50px;
     font-family: 'Montserrat';
     color: rgba(255, 255, 255, 0.614);
 }
 
 .text {
-    color: rgba(255, 255, 255, 0.603);
-    width: 35%;
-    margin-right: 5%;
+    color: rgba(255, 255, 255, 0.73);
+    width: 38%;
+    margin-right: 2%;
 }
 .text h2{
-    font-weight: 300;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 2vw;
     font-family: "Montserrat";
 }
-.text p {
+.text h3 {
+    font-size: 1.5vw;
     font-family: "Roboto", sans-serif;
     font-weight: 50;
-    font-size:medium;
 }
-
 @media (max-width: 576px) {
     .main{
         justify-content: center;
     }
     .name {
-        margin-top: 18vh;
+        padding-top: 15vh;
         margin-inline: 0;
-        width: auto;
+        height: 0;
         text-align: center;
     }
     .text {
         width: 90%;
-        margin: 0;
+        margin-top: 20vw;
+        text-align: center;
+    }
+    .text h2{
+        font-size: 6vw;
+    }
+    .text h3 {
+        font-size: 4vw;
+    }
+    .name p {
+        font-size: 8vw;
+        font-weight: 400;
+    }
+    
+}
+
+@media (min-width:576px) and (max-width:1024px) {
+    .main{
+        justify-content: center;
+    }
+    .name {
+        margin-top: 5vw;
+    }
+    .text{
+        width: 80%;
         text-align: center;
     }
     .name h1 {
-        font-size: 40px;
-    }
-    .text h2, .text p {
-        font-size: 10px;
-    }
-}
-
-@media (max-width:1024px) {
-    .text{
-        width: 60%;
+        font-size: 5vw;
+        text-align: center;
     }
     .text h2{
-        font-size: 20px;
+        font-size: 3vw;
         font-weight: 400;
+    }
+    .text h3 {
+        font-size: 2vw;
+        font-weight: 300;
     }
 }
