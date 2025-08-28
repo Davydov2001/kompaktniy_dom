@@ -5,10 +5,12 @@ import { useRouter } from "next/router";
 import Carousel from "../../components/carousel/carousel";
 import Header from "../../components/header/header";
 import Contacts from "../../components/contacts/contacts";
+import { useState } from "react";
 
 const Product:NextPage = () => {
     const router = useRouter()
     const {query} = useRouter()
+    const [description, setDescription] = useState(false)
     return <>
     <main className={styles.main}>
         <Header/>
@@ -22,7 +24,11 @@ const Product:NextPage = () => {
             <div className={styles.order}>
                 <button  onClick={() => router.push('/#order')}>{info.prices[Number(query.id)]}</button>
             </div>
-            <div className={styles.description}><p>Описание</p><pre className={styles.text}>{info.descriptions[Number(query.id)]}</pre></div>
+            <div onClick={() => setDescription(!description)} className={styles.description}>
+                <p>Описание</p>
+                <i style={description ? {transform: "rotate(135deg)", transition: "all 0.5s"}: {transition: "all ease-in-out 0.5s"}} className="bi bi-plus"></i>
+                <pre className={description ? `${styles.show}`: `${styles.hide}`}>{info.descriptions[Number(query.id)]}</pre>
+            </div>
         </div>
         {
             info.video[Number(query.id)] ? 

@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 .main {
     display: flex;
     justify-content: center;
@@ -43,24 +44,61 @@
     color: rgb(255, 255, 255);
 }
 
-
-.img {
-    width: 40%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 10px;
+.description {
+    cursor: pointer;
+    margin-top: 5vw;
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px wheat; 
+    border-radius: 1.5vw;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.371);
+    transition: all 0.2s;
 }
-
-.text {
-    width: 30vw;
+.description:hover{
+    box-shadow: 0 0 10px 1px white;
+}
+.show{
+    padding: 2vw;
+    width: 100%;
+    height: auto;
     line-height: 1.5;
-    margin-right: 5vw;
     color: rgba(255, 255, 255, 0.721);
     font-size: 1vw;
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 300;
     white-space: pre-wrap; 
     word-wrap: break-word;
+    transition: all 1s;
+}
+.description p {
+    padding: 1vw;
+    margin: 0;
+    width: 80%;
+    color: white;
+    font-weight: 200;
+    font-size: 1.5vw;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+.description i {
+    color: white;
+    font-size: 3vw;
+}
+.hide {
+    margin: 0;
+    padding: 0;
+    padding-left: 2vw;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 0;
+    color: rgba(255, 255, 255, 0.721);
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    transition: all 1s;
 }
 
 .order {
@@ -86,15 +124,6 @@
     transform: scale(1.02);
     box-shadow: 0px 0px 20px 2px rgb(255, 255, 255);
     color: rgb(255, 255, 255);
-}
-
-.main div div p{
-    text-align: center;
-    margin-top: 5vw;
-    color: rgb(255, 255, 255);
-    font-size: 1.5vw;
-    font-family: 'Montserrat', Helvetica, sans-serif;
-    font-weight: 400;
 }
 .video{
     display: flex;
@@ -123,17 +152,20 @@
         width: 40%;
         font-size: 3vw;
     }
-    .text {
-        font-size: 2vw;
-        width: 80%;
-    }
+   
     .description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 80vw;
+        margin-left: 5vw;
+        border-radius: 20px;
     }
-    .main div div p {
+    .description p {
         font-size: 4vw;
+    }
+    .description i {
+        font-size: 8vw;
+    }
+    .show {
+        font-size: 3vw;
     }
     .back {
         font-size: 3vw;
