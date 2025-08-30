@@ -11,6 +11,8 @@ const Product:NextPage = () => {
     const router = useRouter()
     const {query} = useRouter()
     const [description, setDescription] = useState(false)
+    const [specification, setSpecicfication] = useState(false)
+
     return <>
     <main className={styles.main}>
         <Header/>
@@ -28,6 +30,11 @@ const Product:NextPage = () => {
                 <p>Описание</p>
                 <i style={description ? {transform: "rotate(135deg)", transition: "all 0.5s"}: {transition: "all 0.5s"}} className="bi bi-plus"></i>
                 <pre className={description ? `${styles.show}`: `${styles.hide}`}>{info.descriptions[Number(query.id)]}</pre>
+            </div>
+            <div onClick={() => setSpecicfication(!specification)} className={styles.specification}>
+                <p>Характеристики</p>
+                <i style={specification ? {transform: "rotate(135deg)", transition: "all 0.5s"}: {transition: "all 0.5s"}} className="bi bi-plus"></i>
+                <pre className={specification ? `${styles.show}`: `${styles.hide}`}>{info.descriptions[Number(query.id)]}</pre>
             </div>
         </div>
         {
