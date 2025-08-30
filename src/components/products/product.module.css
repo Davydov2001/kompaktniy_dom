@@ -133,6 +133,7 @@
     font-weight: 300;
     transition: ease-in-out 0.1s;
     cursor: pointer;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.371);
 }
 .order button:hover {
     transform: scale(1.02);
@@ -147,8 +148,9 @@
     margin-bottom: 10vh;
 }
 .video iframe {
+    border: solid 1px wheat; 
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.371);
     border-radius: 30px;
-    border: none;
     height: 30vw;
     width: 60vw;
 }
@@ -157,14 +159,15 @@
     .name {
         font-size: 3vw;
         width: 80vw;
-        margin-left: 10vw;
+        margin-left: 3vw;
     }
     .order {
         width: 100%;
     }
     .order button {
         width: 40%;
-        font-size: 3vw;
+        margin-top: 2vw;
+        font-size: 5vw;
     }
    
     .description, .specification {
@@ -183,9 +186,10 @@
         font-size: 3vw;
     }
     .back {
-        font-size: 3vw;
-        width: 20%;
-        height: 5vw;
+        font-size: 5vw;
+        padding-inline: 5vw;
+        width: auto;
+        height: auto;
     }
     .butt {
         margin-top: 20vw;

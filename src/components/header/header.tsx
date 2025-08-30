@@ -22,11 +22,11 @@ const Header:FC = () => {
     <header  className={styles.mini}>
             <p onClick={()=> setState(true)}>Меню</p>
             <div className={state ? `${styles.show}` : `${styles.hide}`}>
-                <a onClick={()=> setState(false)} href="#shop">Наши товары</a>
-                <a onClick={()=> setState(false)} href="#advantages">Достоинства</a>
-                <a onClick={()=> setState(false)} href="#order">Заказать</a>
-                <a onClick={()=> setState(false)} href="#contacts">Контакты</a>  
-                <p className={styles.back} onClick={()=> setState(false)}>Назад</p>
+                <a onClick={()=> {setState(false), router.push("/#shop")}} href="#shop">Наши товары</a>
+                <a onClick={()=> {setState(false), router.push("/#advantages")}} href="#advantages">Достоинства</a>
+                <a onClick={()=> {setState(false), router.push("/#order")}} href="#order">Заказать</a>
+                <a onClick={()=> {setState(false), router.push("/#contacts")}} href="#contacts">Контакты</a>  
+                <p className={styles.back} onClick={()=> {setState(false), router.push("/#shop")}}>Назад</p>
             </div>
     </header>
     </>

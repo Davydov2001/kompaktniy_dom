@@ -140,15 +140,15 @@
     }
     .card p {
         width: 70%;
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .card a {
         width: 50%;
     }
     .card a button {
         width: 100%;
-        height: 5vw;
-        font-size: 3vw;
+        height: auto;
+        font-size: 6vw;
     }
     .show_block{
         justify-content: center;
